@@ -38,9 +38,6 @@ CATEGORICAL = [
 def load_stage1():
     train = pd.read_excel(XLSX, sheet_name="Stage1_Train")
     test = pd.read_excel(XLSX, sheet_name="Stage1_Test")
-    if "customer_id" not in test.columns:
-        # TEMPORARY: organizers have not provided test IDs yet. Replace once they do.
-        test.insert(0, "customer_id", [f"T{i:03d}" for i in range(1, len(test) + 1)])
     X = train[NUMERIC + CATEGORICAL]
     y = (train["y"] == "yes").astype(int).to_numpy()
     return train, test, X, y
