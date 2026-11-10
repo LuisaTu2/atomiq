@@ -8,3 +8,4 @@ qiskit-aer
 qiskit-machine-learning
 qiskit-optimization
 qiskit-algorithms
+openpyxl
