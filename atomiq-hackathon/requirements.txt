@@ -1,0 +1,10 @@
+numpy
+pandas
+scikit-learn
+matplotlib
+jupyterlab
+qiskit>=1.0
+qiskit-aer
+qiskit-machine-learning
+qiskit-optimization
+qiskit-algorithms
