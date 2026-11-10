@@ -3,7 +3,7 @@ pandas
 scikit-learn
 matplotlib
 jupyterlab
-qiskit>=1.0
+qiskit>=2.1
 qiskit-aer
 qiskit-machine-learning
 qiskit-optimization

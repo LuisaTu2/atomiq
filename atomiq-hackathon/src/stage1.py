@@ -80,7 +80,7 @@ def classical_model(C=0.3, class_weight=None):
 
 
 class QuantumKernelClassifier(BaseEstimator, ClassifierMixin):
-    """Classical preprocessing -> reduce to n_qubits features -> angle scaling ->
+    """Classical preprocessing -> PCA to n_qubits -> angle scaling ->
     ZZFeatureMap fidelity kernel (statevector, exact) -> SVC with Platt scaling."""
 
     def __init__(self, n_qubits=4, reps=1, C=1.0, scale=0.5, reducer="pca", seed=SEED):
